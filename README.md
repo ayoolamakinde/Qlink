@@ -36,8 +36,10 @@ OK
 # Open another terminal and activate the virtual env  
 (base) $ source qlinkrest/bin/activate  
 
-# navigate to the folder containing the code and open interactive python shell  
-(qlinkrest) $ cd replaceWithDirectory  
+# navigate to the folder containing the code  
+if you are not in the directory containing the code, navigate there.  
+
+# open interactive python shell 
 (qlinkrest) $ python  
 
 # import request  
