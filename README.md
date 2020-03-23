@@ -43,7 +43,7 @@ OK
 import requests
 
 # List all messages
-response = requests.get("http://127.0.0.1:5000")
+response = requests.get("http://127.0.0.1:5000") &nbsp;
 response.json()
 
 # Retrieve a specific message 
