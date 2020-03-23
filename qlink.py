@@ -15,7 +15,7 @@ with open('data.json') as f:
 #List all messages
 @app.route('/', methods=['GET'])
 def ListAll():
-    return jsonify({'all messages' : allmessages})
+    return jsonify({'List all messages' : allmessages})
 
 #Retrieve a specific message
 @app.route('/qlink/<string:msg>', methods=['GET'])
