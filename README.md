@@ -5,9 +5,15 @@ should support the following operations:
 - List messages. 
 These operations follows proper RESTful design.  
 
-# RUN with Docker
+YOU CAN EITHER RUN WITH DOCKER OR FOLLOW THE STEP BY STEP PROCESS TO SETUP VIRTUAL ENVRONMENT FOR THE RESTAPI
+
+## RUN with Docker
 docker build -t newbuild .  
-docker run newbuild
+docker run newbuild  
+
+skip to "MAKE REQUEST" section
+
+## STEP BY STEP
 
 # Set up a virtual environment using with python3
 pip install virtualenv  
@@ -31,7 +37,8 @@ OK
 # run the restApi  
 
 (qlinkrest) $ python qlink.py  
-* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)  
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+
 
 ## Make requests  
 
@@ -44,7 +51,7 @@ if you are not in the directory containing the code, navigate there.
 # open interactive python shell 
 (qlinkrest) $ python  
 
-# import request  
+# import request
 >>> import requests   
 
 # List all messages  
