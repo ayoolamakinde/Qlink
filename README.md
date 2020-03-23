@@ -8,6 +8,7 @@ These operations follows proper RESTful design.
 ## Getting Started
 
 # Set up a virtual environment using with python3
+pip install virtualenv  
 virtualenv -p python3 qlinkrest  
 source qlinkrest/bin/activate  
 
