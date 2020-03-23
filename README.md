@@ -5,8 +5,6 @@ should support the following operations:
 - List messages. 
 These operations follows proper RESTful design.  
 
-## Getting Started
-
 # RUN with Docker
 docker build -t newbuild .  
 docker run newbuild
