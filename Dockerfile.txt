@@ -1,0 +1,13 @@
+FROM python:3
+
+ADD qlink.py .
+ADD test.py .
+ADD data.json .
+
+# Install dependencies:
+RUN pip install flask requests
+
+
+# Run the test:
+CMD ["python", "test.py"]
+
