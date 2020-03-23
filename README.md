@@ -7,6 +7,12 @@ These operations follows proper RESTful design.
 
 ## Getting Started
 
+# Docker Build and Run for test
+docker build -t newbuild .  
+docker run newbuild
+
+
+
 # Set up a virtual environment using with python3
 pip install virtualenv  
 virtualenv -p python3 qlinkrest  
