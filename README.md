@@ -40,31 +40,29 @@ OK
 (qlinkrest) $ python
 
 # import request
->>> import requests
+import requests
 
 # List all messages
->>> response = requests.get("http://127.0.0.1:5000")
->>> response.json()
+response = requests.get("http://127.0.0.1:5000")
+response.json()
 
 # Retrieve a specific message 
 (EXAMPLE - A message “Ayoola Makinde”)
->>> response = requests.get("http://127.0.0.1:5000/qlink/Ayoola Makinde")
->>> response.json()
+response = requests.get("http://127.0.0.1:5000/qlink/Ayoola Makinde")
+response.json()
 
 # Create a new message 
 (EXAMPLE - Create a message “I live in Guelph”)
->>> response = requests.post("http://127.0.0.1:5000/qlink", json={"I live in Guelph":" "})
->>> response.json()
-
+response = requests.post("http://127.0.0.1:5000/qlink", json={"I live in Guelph":" "})
+response.json()
 
 # Update a message
 EXAMPLE - Change the message “Cross River State” to "University of Dallas")
->>> response = requests.put("http://127.0.0.1:5000/qlink/Cross River State", json={"University of Dallas":" "})
->>> response.json()
-
+response = requests.put("http://127.0.0.1:5000/qlink/Cross River State", json={"University of Dallas":" "})
+response.json()
 
 # Delete a message
 (EXAMPLE - A message “Ayoola Makinde”)
->>> response = requests.delete("http://127.0.0.1:5000/qlink/Ayoola Makinde")
->>> response.json()
+response = requests.delete("http://127.0.0.1:5000/qlink/Ayoola Makinde")
+response.json()
 
